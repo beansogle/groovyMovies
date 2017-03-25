@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="http://bootswatch.com/cosmo/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>GroovyMovies</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="index.html">GroovyMovies</a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="jumbotron">
+        <h3 class="text-center">Search for any movies or shows in the IMDB database.</h3>
+        <form id="searchForm">
+          <input type="text" class="form-control" id="searchText" placeholder="Search Titles">
+        </form>
+      </div>
+    </div>
+
+    <div class="container">
+      <div id="movies" class="row"></div>
+    </div>
+
+    <div class="container">
+      <div id="charts" class="text-center">
+        <h2>Top Charts: United States</h2>
+      </div>
+      <div id="trends" class="row">
+        <div class="col-md-4 text-center">
+        <h3>Actors</h3>
+        <iframe scrolling="no" style="border:none;" width="300" height="413" src="https://trends.google.com/trends/topcharts/widget?cid=actors&geo=US&date=201702&vm=trendingchart&h=413"></iframe>
+        </div>
+        <div class="col-md-4 text-center">
+          <h3>Series</h3>
+          <iframe scrolling="no" style="border:none;" width="250" height="413" src="https://trends.google.com/trends/topcharts/widget?cid=tv_shows&geo=US&date=201702&vm=trendingchart&h=413"></iframe>
+          </div>
+            <div class="col-md-4 text-center">
+              <h3>Box Office</h3>
+              <iframe scrolling="no" style="border:none;" width="250" height="413" src="https://trends.google.com/trends/topcharts/widget?cid=films&geo=US&date=201702&vm=trendingchart&h=413"></iframe>
+          </div>
+
+      </div>
+    </div>
+
+    <footer>
+      <div>
+      </div>
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="js/main.js"></script>
+
+
+  </body>
+
+
+</html>
